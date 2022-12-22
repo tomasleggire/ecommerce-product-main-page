@@ -3,10 +3,12 @@ import '../CSS/Narbar.css';
 import logo from '../IMAGES/logo.svg';
 import profileImg from '../IMAGES/image-avatar.png';
 import {BsCart3} from "react-icons/bs";
+import {BsList} from "react-icons/bs";
 
 export default function Navbar() {
     return (
         <nav>
+            <BsList className="list-icon"/>
             <div className="img-div"><img className='logo-img' src={logo}/></div>
             <ul>
               <li>Collections</li>
