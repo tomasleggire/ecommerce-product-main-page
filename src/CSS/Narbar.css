@@ -15,13 +15,13 @@ img {
     cursor: pointer;
 }
 
-ul {
+.desktop-ul {
     list-style: none;
     display: flex;
     margin-left: 35px;
 }
 
-li {
+.desktop-li {
     cursor: pointer;
     margin-left: 14px;
     font-weight: 600;
@@ -30,7 +30,7 @@ li {
     border-bottom: 3px solid transparent;
 }
 
-li:hover {
+.desktop-li:hover {
     color: black;
     border-bottom: 3px solid orange;
 }
@@ -69,7 +69,7 @@ li:hover {
         border: none;
         padding: 15px 20px;
     }
-    ul {
+    .desktop-ul {
         display: none;
     }
     .list-icon {
@@ -84,3 +84,5 @@ li:hover {
         color: black;
     }
 }
+
+
