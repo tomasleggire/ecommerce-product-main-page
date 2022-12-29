@@ -1,0 +1,28 @@
+.main-gallery {
+    width: 480px;
+    height: 630px;
+}
+
+.main-photo-gallery {
+    width: 100%;
+    height: 460px;
+    background-color: green;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.options-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+    width: 100%;
+}
+
+.option {
+    width: 90px;
+    height: 90px;
+    background-color: rgb(212, 81, 109);
+    border-radius: 15px;
+    cursor: pointer;
+}
