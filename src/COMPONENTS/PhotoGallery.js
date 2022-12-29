@@ -1,7 +1,7 @@
 import React from "react";
 import '../CSS/PhotoGallery.css';
 
-export default function PhotoGallery({items, minItems, focusItem, setFocusItem}) {
+export default function PhotoGallery({items, focusItem, setFocusItem}) {
     return (
         <div className="main-gallery">
             <div className="main-photo-gallery">
