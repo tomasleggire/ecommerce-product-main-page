@@ -6,13 +6,13 @@ import useCommerceItems from './HOOKS/useCommerceItems';
 
 function App() {
 
-  const [items, focusItem] = useCommerceItems();
+  const [items, focusItem, changeFocus] = useCommerceItems();
 
   return (
     <div className="App">
       <Navbar />
       <div className='main-contain'>
-        <PhotoGallery items={items} focusItem={focusItem}/>
+        <PhotoGallery items={items} focusItem={focusItem} changeFocus={changeFocus}/>
       </div>
     </div>
   );

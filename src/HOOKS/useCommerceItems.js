@@ -31,14 +31,25 @@ export default function useCommerceItems() {
             img: Product4,
             min: ProductMin4
         },
-    ])
+    ]);
 
     const [focusItem, setFocusItem] = useState({
         id: 1,
         img: Product1,
         min: ProductMin1,
         price: 125
-    })
+    });
 
-    return [items, focusItem];
+    const changeFocus = (id) => {
+        let item = items.findIndex((item) => item.id === id);
+        const newFocusItem = {
+            id: items[item].id,
+            img: items[item].img,
+            min: items[item].min,
+            price: 125
+        }
+        setFocusItem(newFocusItem);
+    }
+
+    return [items, focusItem, changeFocus];
 }
