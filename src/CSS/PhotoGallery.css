@@ -1,5 +1,5 @@
 .main-gallery {
-    width: 480px;
+    max-width: 480px;
     height: 630px;
     margin-right: 60px;
 }
@@ -37,4 +37,21 @@ img {
 
 .selected {
     opacity: .3;
+}
+
+@media only screen and (max-width: 1110px) {
+    .main-gallery {
+        margin-right: 30px;
+    }
+}
+
+@media only screen and (max-width: 980px) {
+    .main-gallery {
+        margin-right: 0;
+        width: 100%;
+        height: auto;
+    }
+    .options-container {
+        display: none;
+    }
 }
