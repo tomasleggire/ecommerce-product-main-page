@@ -1,17 +1,20 @@
 import React from "react";
 import '../CSS/PhotoGallery.css';
 
-export default function PhotoGallery({items, focusItem, setFocusItem}) {
+export default function PhotoGallery({items, focusItem}) {
     return (
         <div className="main-gallery">
             <div className="main-photo-gallery">
                 <img src={focusItem.img} />
             </div>
             <div className="options-container">
-                <div className="option"></div>
-                <div className="option"></div>
-                <div className="option"></div>
-                <div className="option"></div>
+                {items.map((item) => {
+                    return (
+                        <div className={`option ${item.id === focusItem.id ? 'border' : ''}`} key={item.id}>
+                            <img src={item.min} className={`${item.id === focusItem.id ? 'selected' : ''}`}/>
+                        </div>
+                    )
+                })}
             </div>
         </div>
     )

@@ -40,5 +40,5 @@ export default function useCommerceItems() {
         price: 125
     })
 
-    return [items, focusItem, setFocusItem];
+    return [items, focusItem];
 }
