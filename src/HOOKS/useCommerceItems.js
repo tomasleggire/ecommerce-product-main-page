@@ -49,7 +49,7 @@ export default function useCommerceItems() {
             price: 125
         }
         setFocusItem(newFocusItem);
-    }
+    };
 
     return [items, focusItem, changeFocus];
 }

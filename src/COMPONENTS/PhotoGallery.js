@@ -17,9 +17,9 @@ export default function PhotoGallery({items, focusItem, changeFocus}) {
                         >
                           <img src={item.min} className={`${item.id === focusItem.id ? 'selected' : ''}`}/>
                         </div>
-                    )
+                    );
                 })}
             </div>
         </div>
-    )
-}
+    );
+};
