@@ -1,5 +1,8 @@
 import React from "react";
 import '../CSS/InfoProduct.css';
+import {BsDash} from 'react-icons/bs';
+import {BsPlus} from 'react-icons/bs';
+import {BsCart3} from "react-icons/bs";
 
 export default function InfoProduct() {
     return (
@@ -14,12 +17,12 @@ export default function InfoProduct() {
           <span className="old-price">$250.00</span>
           <div className="footer-info">
             <div className="contador-container">
-              <button className="btn">-</button>
+              <BsDash className="btn"/>
               <span className="contador">0</span>
-              <button className="btn">+</button>
+              <BsPlus className="btn"/>
             </div>
             <div className="add-btn">
-                <span className="logo-add">logo</span>
+                <BsCart3 className="log-add-btn"/>
                 <span className="add">Add to cart</span>
             </div>
           </div>

@@ -1,6 +1,7 @@
 .main-gallery {
     width: 480px;
     height: 630px;
+    margin-right: 60px;
 }
 
 img {
