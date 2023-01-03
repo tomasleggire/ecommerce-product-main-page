@@ -48,10 +48,19 @@ img {
 @media only screen and (max-width: 980px) {
     .main-gallery {
         margin-right: 0;
-        width: 100%;
+        max-width: 420px;
         height: auto;
+    }
+    .main-photo-gallery {
+        width: 100%;
     }
     .options-container {
         display: none;
+    }
+}
+
+@media only screen and (max-width: 850px) {
+    img {
+        border-radius: 0;
     }
 }
