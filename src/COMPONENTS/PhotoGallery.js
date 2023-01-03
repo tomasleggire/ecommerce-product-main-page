@@ -1,11 +1,17 @@
 import React from "react";
 import '../CSS/PhotoGallery.css';
+import { BiChevronLeft } from "react-icons/bi";
+import { BiChevronRight } from "react-icons/bi";
 
 export default function PhotoGallery({items, focusItem, changeFocus}) {
     return (
         <div className="main-gallery">
             <div className="main-photo-gallery">
                 <img src={focusItem.img} />
+                <div className="btn-scroll-container">
+                    <BiChevronLeft className="btn-scroll izq"/>
+                    <BiChevronRight className="btn-scroll der"/>
+                </div>
             </div>
             <div className="options-container">
                 {items.map((item) => {
