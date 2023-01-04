@@ -40,8 +40,7 @@
 .price-cheap {
     margin-left: 10px;
     font-weight: 600;
-    color: rgb(219, 150, 20);
-    background-color: rgb(240, 220, 185);
+    color: rgb(243, 135, 12);
     padding: 2px 5px;
 }
 
@@ -72,11 +71,11 @@
     cursor: pointer;
     width: 35px;
     height: 35px;
-    color: orange;
+    color: rgb(243, 135, 12);
 }
 
 .btn:hover {
-    color: rgb(231, 193, 123);
+    color: rgb(241, 176, 115);
 }
 
 .contador {
@@ -86,7 +85,7 @@
 
 .add-btn {
     width: 60%;
-    background-color: orange;
+    background-color: rgb(243, 135, 12);
     padding: 15px 0;
     display: flex;
     justify-content: center;
@@ -120,5 +119,35 @@
 @media only screen and (max-width: 980px) {
     .main-info-container {
         margin-left: 0;
+        max-width: 430px;
+        padding: 0 20px;
+    }
+    .company-span {
+        font-weight: 700;
+        margin-bottom: 10px;
+        font-size: 14px;
+    }    
+    .title-product {
+        font-size: 28px;
+        line-height: 35px;
+        margin-bottom: 15px;
+    }
+    .old-price {
+        margin: 0 0 0 auto;
+        margin-bottom: 25px;
+        margin-top: -28px;
+    }
+    .footer-info {
+        display: flex;
+        flex-direction: column;
+        margin-top: 10px;
+    }
+    .contador-container {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    .add-btn {
+        width: 90%;
+        margin-bottom: 80px;
     }
 }

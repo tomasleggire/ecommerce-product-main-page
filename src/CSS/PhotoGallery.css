@@ -31,6 +31,10 @@ img {
     border-radius: 50%;
 }
 
+.btn-scroll:hover {
+    color: rgb(243, 135, 12);
+}
+
 .options-container {
     display: flex;
     justify-content: space-between;
@@ -46,6 +50,10 @@ img {
     border-radius: 17px;
 }
 
+.img-option:hover {
+    opacity: .3;
+}
+
 .border {
     border: 2px solid orange;
 }
@@ -57,6 +65,8 @@ img {
 @media only screen and (max-width: 1110px) {
     .main-gallery {
         margin-right: 30px;
+        margin-top: 30px;
+        margin-bottom: 30px;
     }
 }
 
@@ -83,5 +93,23 @@ img {
 @media only screen and (max-width: 850px) {
     img {
         border-radius: 0;
+    }
+}
+
+@media only screen and (max-width: 570px) {
+    .main-gallery {
+        margin-top: 0;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .btn-scroll-container {
+        width: 350px;  
+    }
+}
+
+@media only screen and (max-width: 285px) {
+    .btn-scroll-container {
+        width: 250px;  
     }
 }

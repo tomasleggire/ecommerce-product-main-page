@@ -21,7 +21,7 @@ export default function PhotoGallery({items, focusItem, changeFocus}) {
                           key={item.id}
                           onClick={() => changeFocus(item.id)}
                         >
-                          <img src={item.min} className={`${item.id === focusItem.id ? 'selected' : ''}`}/>
+                          <img src={item.min} className={`${item.id === focusItem.id ? 'selected' : ''} img-option`}/>
                         </div>
                     );
                 })}
