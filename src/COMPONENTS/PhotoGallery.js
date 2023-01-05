@@ -10,11 +10,11 @@ export default function PhotoGallery({items, focusItem, changeFocus, changeFocus
                 <img src={focusItem.img} />
                 <div className="btn-scroll-container">
                     <BiChevronLeft 
-                      className={`btn-scroll izq ${focusItem.id === 1 ? 'disabled' : ''}`}
+                      className={`btn-scroll ${focusItem.id === 1 ? 'disabled' : ''}`}
                       onClick={changeFocusIzq}
                     />
                     <BiChevronRight
-                      className={`btn-scroll der ${focusItem.id === 4 ? 'disabled' : ''}`}
+                      className={`btn-scroll ${focusItem.id === 4 ? 'disabled' : ''}`}
                       onClick={changeFocusDer}
                     />
                 </div>

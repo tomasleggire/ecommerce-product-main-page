@@ -7,11 +7,87 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgba(0, 0, 0, 0.274);
+    background-color: rgba(0, 0, 0, 0.541);
 }
 
 .main-modal {
-    width: 300px;
-    height: 300px;
-    background-color: red;
+    max-width: 800px;
+    height: 100vh;
+    padding: 50px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.btn-close-modal {
+    width: 28px;
+    height: 28px;
+    margin: 0 0 10px auto;
+    cursor: pointer;
+    color: white;
+}
+
+.btn-close-modal:hover {
+    color: orange;
+}
+
+.main-photo-modal {
+    max-width: 640px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-scroll-container-modal {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    width: 640px;
+}
+
+.btn-scroll-modal {
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.btn-scroll-modal:hover {
+    color: orange;
+}
+
+.izq {
+    margin-left: -25px;
+}
+
+.der {
+    margin-right: -25px;
+}
+
+.options-modal-container {
+    width: 75%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.option-modal {
+    width: 100px;
+    cursor: pointer;
+    background-color: white;
+    border-radius: 16px;
+    height: 100px;
+}
+
+.img-modal:hover {
+    opacity: .5;
+}
+
+@media only screen and (max-width: 980px) {
+    .main-modal-container {
+        display: none;
+    }
 }

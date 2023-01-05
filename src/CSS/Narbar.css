@@ -11,10 +11,6 @@ nav {
     display: none;
 }
 
-img {
-    cursor: pointer;
-}
-
 .desktop-ul {
     list-style: none;
     display: flex;
@@ -39,6 +35,7 @@ img {
     display: flex;
     align-items: center;
     margin: 0 0 0 auto;
+    cursor: pointer;
 }
 
 .cart-logo {

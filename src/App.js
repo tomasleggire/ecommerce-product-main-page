@@ -27,7 +27,14 @@ function App() {
         <InfoProduct />
       </div>
       {modalValue && (
-        <ModalProduct setModalValue={setModalValue}/>
+        <ModalProduct 
+          setModalValue={setModalValue}
+          items={items}
+          focusItem={focusItem}
+          changeFocus={changeFocus}
+          changeFocusIzq={changeFocusIzq}
+          changeFocusDer={changeFocusDer}
+        />
       )}
     </div>
   );
