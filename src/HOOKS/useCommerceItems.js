@@ -51,5 +51,31 @@ export default function useCommerceItems() {
         setFocusItem(newFocusItem);
     };
 
-    return [items, focusItem, changeFocus];
+    const changeFocusIzq = () => {
+        let item = items.findIndex((item) => item.id === focusItem.id);
+        if (focusItem.id > 1) {
+          const newFocusItem = {
+              id: items[item - 1].id,
+              img: items[item - 1].img,
+              min: items[item - 1].min,
+              price: 125
+          }
+          setFocusItem(newFocusItem);
+        } else return;
+    };
+
+    const changeFocusDer = () => {
+        let item = items.findIndex((item) => item.id === focusItem.id);
+        if (focusItem.id < 4) {
+          const newFocusItem = {
+              id: items[item + 1].id,
+              img: items[item + 1].img,
+              min: items[item + 1].min,
+              price: 125
+          }
+          setFocusItem(newFocusItem);
+        } else return;
+    };
+
+    return [items, focusItem, changeFocus, changeFocusIzq, changeFocusDer];
 }

@@ -8,6 +8,7 @@ img {
     width: 100%;
     min-height: auto;
     border-radius: 15px;
+    user-select: none;
 }
 
 .main-photo-gallery {
@@ -60,6 +61,12 @@ img {
 
 .selected {
     opacity: .3;
+}
+
+.disabled {
+    cursor: not-allowed;
+    user-select: none;
+    opacity: .5;
 }
 
 @media only screen and (max-width: 1110px) {
