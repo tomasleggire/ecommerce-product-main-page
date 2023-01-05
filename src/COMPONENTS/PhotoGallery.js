@@ -3,10 +3,10 @@ import '../CSS/PhotoGallery.css';
 import { BiChevronLeft } from "react-icons/bi";
 import { BiChevronRight } from "react-icons/bi";
 
-export default function PhotoGallery({items, focusItem, changeFocus, changeFocusIzq, changeFocusDer}) {
+export default function PhotoGallery({items, focusItem, changeFocus, changeFocusIzq, changeFocusDer, setModalValue}) {
     return (
         <div className="main-gallery">
-            <div className="main-photo-gallery">
+            <div className="main-photo-gallery" onClick={() => setModalValue(true)}>
                 <img src={focusItem.img} />
                 <div className="btn-scroll-container">
                     <BiChevronLeft 
@@ -16,7 +16,6 @@ export default function PhotoGallery({items, focusItem, changeFocus, changeFocus
                     <BiChevronRight
                       className={`btn-scroll der ${focusItem.id === 4 ? 'disabled' : ''}`}
                       onClick={changeFocusDer}
-                      disabled
                     />
                 </div>
             </div>
