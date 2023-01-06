@@ -7,6 +7,11 @@ nav {
     border-bottom: 2px solid rgb(219, 216, 216);
 }
 
+.logo-img {
+    cursor: pointer;
+    border-radius: 0;
+}
+
 .list-icon {
     display: none;
 }
