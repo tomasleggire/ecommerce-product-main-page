@@ -6,7 +6,7 @@ import {BsCart3} from "react-icons/bs";
 import {BsList} from "react-icons/bs";
 import MenuMobile from "./MenuMobile";
 
-export default function Navbar() {
+export default function Navbar({setCartModalValue}) {
 
     const [menuMobileValue, setMenuMobileValue] = useState(false);
 
@@ -22,7 +22,7 @@ export default function Navbar() {
               <li className="desktop-li">Contact</li>
             </ul>
             <div className="profile-main">
-                <BsCart3 className="cart-logo"/>
+                <BsCart3 className="cart-logo" onClick={() => setCartModalValue(true)}/>
                 <div className="profile-img"><img className='avatar-img' src={profileImg}/></div>
             </div>
             <MenuMobile setMenuMobileValue={setMenuMobileValue} menuMobileValue={menuMobileValue}/>
