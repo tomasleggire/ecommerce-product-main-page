@@ -27,6 +27,7 @@ function App() {
           changeFocusIzq={changeFocusIzq}
           changeFocusDer={changeFocusDer}
           setModalValue={setModalValue}
+          setCartModalValue={setCartModalValue}
         />
         <InfoProduct />
       </div>
