@@ -94,6 +94,8 @@ export default function useCommerceItems() {
     const addToCart = () => {
       if (!contadorCart) {
         return;
+      } else if (cartContent){
+        setCartContent(cartContent + contadorCart);
       } else {
         setCartContent(contadorCart);
       }
