@@ -4,19 +4,7 @@ import {BsDash} from 'react-icons/bs';
 import {BsPlus} from 'react-icons/bs';
 import {BsCart3} from "react-icons/bs";
 
-export default function InfoProduct() {
-
-  const [contadorCart, setContadorCart] = useState(0);
-
-  const sumarContador = () => {
-    setContadorCart(contadorCart + 1);  
-  };
-
-  const restarContador = () => {
-    if (contadorCart) {
-      setContadorCart(contadorCart - 1);
-    } else return;
-  };
+export default function InfoProduct({contadorCart, sumarContador, restarContador, addToCart}) {
 
     return (
         <div className="main-info-container">
@@ -36,7 +24,7 @@ export default function InfoProduct() {
             </div>
             <div className="add-btn">
                 <BsCart3 className="log-add-btn"/>
-                <span className="add">Add to cart</span>
+                <span className="add" onClick={addToCart}>Add to cart</span>
             </div>
           </div>
         </div>

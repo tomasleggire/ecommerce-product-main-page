@@ -77,5 +77,27 @@ export default function useCommerceItems() {
         } else return;
     };
 
-    return [items, focusItem, changeFocus, changeFocusIzq, changeFocusDer];
+    const [contadorCart, setContadorCart] = useState(0);
+
+    const [cartContent, setCartContent] = useState(0);
+
+    const sumarContador = () => {
+      setContadorCart(contadorCart + 1);  
+    };
+
+    const restarContador = () => {
+      if (contadorCart) {
+        setContadorCart(contadorCart - 1);
+      } else return;
+    };
+
+    const addToCart = () => {
+      if (!contadorCart) {
+        return;
+      } else {
+        setCartContent(contadorCart);
+      }
+    }
+
+    return [items, focusItem, changeFocus, changeFocusIzq, changeFocusDer, contadorCart, sumarContador, restarContador, addToCart, cartContent, setCartContent];
 }
