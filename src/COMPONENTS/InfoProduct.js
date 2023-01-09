@@ -1,10 +1,23 @@
-import React from "react";
+import React, {useState} from "react";
 import '../CSS/InfoProduct.css';
 import {BsDash} from 'react-icons/bs';
 import {BsPlus} from 'react-icons/bs';
 import {BsCart3} from "react-icons/bs";
 
 export default function InfoProduct() {
+
+  const [contadorCart, setContadorCart] = useState(0);
+
+  const sumarContador = () => {
+    setContadorCart(contadorCart + 1);  
+  };
+
+  const restarContador = () => {
+    if (contadorCart) {
+      setContadorCart(contadorCart - 1);
+    } else return;
+  };
+
     return (
         <div className="main-info-container">
           <span className="company-span">SNEAKER COMPANY</span>
@@ -17,9 +30,9 @@ export default function InfoProduct() {
           <span className="old-price">$250.00</span>
           <div className="footer-info">
             <div className="contador-container">
-              <BsDash className="btn"/>
-              <span className="contador">0</span>
-              <BsPlus className="btn"/>
+              <BsDash className="btn" onClick={restarContador}/>
+              <span className="contador">{contadorCart}</span>
+              <BsPlus className="btn" onClick={sumarContador}/>
             </div>
             <div className="add-btn">
                 <BsCart3 className="log-add-btn"/>
