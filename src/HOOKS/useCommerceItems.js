@@ -99,5 +99,5 @@ export default function useCommerceItems() {
       }
     }
 
-    return [items, focusItem, changeFocus, changeFocusIzq, changeFocusDer, contadorCart, sumarContador, restarContador, addToCart, cartContent, setCartContent];
+    return [items, focusItem, changeFocus, changeFocusIzq, changeFocusDer, contadorCart, setContadorCart, sumarContador, restarContador, addToCart, cartContent, setCartContent];
 }

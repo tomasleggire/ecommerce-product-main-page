@@ -9,7 +9,7 @@ import CartModal from './COMPONENTS/CartModal';
 
 function App() {
 
-  const [items, focusItem, changeFocus, changeFocusIzq, changeFocusDer, contadorCart, sumarContador, restarContador, addToCart, cartContent, setCartContent] = useCommerceItems();
+  const [items, focusItem, changeFocus, changeFocusIzq, changeFocusDer, contadorCart, setContadorCart, sumarContador, restarContador, addToCart, cartContent, setCartContent] = useCommerceItems();
 
   const [modalValue, setModalValue] = useState(false);
   const [cartModalValue, setCartModalValue] = useState(false);
@@ -34,6 +34,8 @@ function App() {
           sumarContador={sumarContador}
           restarContador={restarContador}
           addToCart={addToCart}
+          setContadorCart={setContadorCart}
+          setCartModalValue={setCartModalValue}
         />
       </div>
       {modalValue && (
@@ -51,6 +53,7 @@ function App() {
           setCartModalValue={setCartModalValue}
           cartContent={cartContent}
           setCartContent={setCartContent}
+          focusItem={focusItem}
         />
       )}
     </div>

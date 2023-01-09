@@ -4,7 +4,7 @@ import {BsDash} from 'react-icons/bs';
 import {BsPlus} from 'react-icons/bs';
 import {BsCart3} from "react-icons/bs";
 
-export default function InfoProduct({contadorCart, sumarContador, restarContador, addToCart}) {
+export default function InfoProduct({contadorCart, sumarContador, restarContador, addToCart, setContadorCart, setCartModalValue}) {
 
     return (
         <div className="main-info-container">
@@ -24,7 +24,11 @@ export default function InfoProduct({contadorCart, sumarContador, restarContador
             </div>
             <div className="add-btn">
                 <BsCart3 className="log-add-btn"/>
-                <span className="add" onClick={addToCart}>Add to cart</span>
+                <span className="add" onClick={() => {
+                  addToCart();
+                  setContadorCart(0);
+                  setCartModalValue(true);
+                }}>Add to cart</span>
             </div>
           </div>
         </div>
