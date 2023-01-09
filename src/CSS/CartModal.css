@@ -1,5 +1,5 @@
 .main-modal-cart {
-    width: 410px;
+    width: 390px;
     position: absolute;
     right: 140px;
     background-color: rgb(236, 236, 238);
@@ -34,7 +34,7 @@ box-shadow: 0px 9px 79px -32px rgba(0,0,0,1);
 }
 
 .cart-items-container {
-    height: 230px;
+    height: 190px;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -59,5 +59,74 @@ box-shadow: 0px 9px 79px -32px rgba(0,0,0,1);
         left: 50%;
         width: 360px;
         margin-left: -180px;
+    }
+}
+
+.compra-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+.compra-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 22px;
+}
+
+.img-item-cart {
+    width: 55px;
+}
+
+.compra-info-prices {
+    font-size: 18px;
+    font-weight: 500;
+    color: gray;
+    margin-bottom: 10px;
+    margin-left: -12px;
+}
+
+.total-price-final {
+    color: black;
+    font-weight: 700;
+}
+
+.btn-close-cart-content {
+    color: gray;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+}
+
+.btn-close-cart-content:hover {
+    color: black;
+}
+
+.checkout-btn {
+    border: none;
+    background: none;
+    width: 88%;
+    margin: 0 auto;
+    background-color: rgb(243, 135, 12);
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 15px 30px;
+    cursor: pointer;
+    border-radius: 15px;
+}
+
+.checkout-btn:hover {
+    background-color: rgb(245, 198, 111);
+}
+
+@media only screen and (max-width: 530px) {
+    .compra-info-prices {
+        font-size: 16px;
+        font-weight: 500;
+        color: gray;
+        margin-bottom: 10px;
     }
 }

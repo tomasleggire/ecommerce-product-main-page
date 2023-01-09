@@ -54,6 +54,7 @@ function App() {
           cartContent={cartContent}
           setCartContent={setCartContent}
           focusItem={focusItem}
+          items={items}
         />
       )}
     </div>
